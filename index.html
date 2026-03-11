@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JPDev - Serviços em Informática, Segurança e Desenvolvimento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">
+        <span class="logo-mark">JP</span>
+        <div class="logo-text">
+          <span class="logo-title">JPDev</span>
+          <span class="logo-subtitle">Informática, Segurança & Desenvolvimento</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#dev">Serviços Dev</a>
+        <a href="#cadastro">Cadastro & Solicitação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a href="#cadastro" class="btn btn-small btn-outline">Solicitar Serviço</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Soluções completas em informática, segurança e desenvolvimento para você e sua empresa.</h1>
+          <p>
+            A <strong>JPDev</strong> cuida de tudo: pequenos serviços elétricos, manutenção de notebooks e desktops,
+            CFTV e alarmes, além de desenvolvimento de sites, bots de WhatsApp e aplicativos sob medida.
+          </p>
+          <div class="hero-actions">
+            <a href="#cadastro" class="btn">Cadastrar e Solicitar Serviço</a>
+            <a href="#servicos" class="btn btn-ghost">Ver todos os serviços</a>
+          </div>
+          <div class="hero-highlights">
+            <div>
+              <span class="hero-number">+100</span>
+              <span class="hero-label">Atendimentos realizados</span>
+            </div>
+            <div>
+              <span class="hero-number">24h</span>
+              <span class="hero-label">Resposta ao seu pedido</span>
+            </div>
+            <div>
+              <span class="hero-number">1 só lugar</span>
+              <span class="hero-label">Tudo em tecnologia</span>
+            </div>
+          </div>
+        </div>
+        <div class="tech-card">
+
+          <div class="tech-image">
+              <img src="assets/futuristic.jpg" alt="Painel tecnológico futurista">
+          </div>
+      
+          <div class="tech-content">
+              <h3>FUTURO EM TECNOLOGIA</h3>
+              <p>INFORMÁTICA • SEGURANÇA • DESENVOLVIMENTO</p>
+          </div>
+      
+      </div>
+          </div>
+          <h2>Solicite agora mesmo</h2>
+          <p class="hero-card-sub">Preencha alguns dados e entraremos em contato.</p>
+          <form id="heroQuickForm" class="quick-form" action="https://formspree.io/f/mjgawwvg" method="POST">
+            <div class="field">
+              <label for="heroNome">Nome</label>
+              <input type="text" id="heroNome" name="nome" placeholder="Seu nome completo" required />
+            </div>
+            <div class="field">
+              <label for="heroWhatsapp">WhatsApp</label>
+              <input type="tel" id="heroWhatsapp" name="whatsapp" placeholder="(00) 00000-0000" required />
+            </div>
+            <div class="field">
+              <label for="heroTipoServico">Tipo de serviço</label>
+              <select id="heroTipoServico" name="servico" required>
+                <option value="">Selecione</option>
+                <option value="Pequenos serviços elétricos">Pequenos serviços elétricos</option>
+                <option value="Manutenção em notebook">Manutenção em notebook</option>
+                <option value="Manutenção em desktop">Manutenção em desktop</option>
+                <option value="Instalação de câmeras de segurança">Instalação de câmeras de segurança</option>
+                <option value="Alarmes e monitoramento">Alarmes e monitoramento</option>
+                <option value="Venda de acessórios e peças">Venda de acessórios e peças</option>
+                <option value="Criação de site">Criação de site</option>
+                <option value="Bot de WhatsApp (servidor local)">Bot de WhatsApp (servidor local)</option>
+                <option value="Criação de aplicativo">Criação de aplicativo</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-full">Quero um orçamento</button>
+            <p class="helper-text">Responderemos pelo WhatsApp informado.</p>
+          </form>
+          <div id="heroQuickSuccess" class="success-message" hidden>
+            <h3>Recebido com sucesso!</h3>
+            <p>Seu pedido foi registrado. Em breve entraremos em contato pelo WhatsApp informado.</p>
+            <button class="btn btn-ghost" type="button" onclick="resetHeroForm()">Enviar outro pedido</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Serviços em informática e segurança</h2>
+          <p>Atendimento residencial, comercial e corporativo com foco em segurança, desempenho e confiabilidade.</p>
+        </header>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Pequenos serviços elétricos</h3>
+            <p>Troca de tomadas, interruptores, luminárias, ventiladores de teto, passagem de cabos e pequenos reparos.
+            </p>
+            <ul class="card-list">
+              <li>Instalação de pontos de energia</li>
+              <li>Correção de curtos e mau contato</li>
+              <li>Organização de fiação aparente</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">💻</div>
+            <h3>Manutenção em notebook e desktop</h3>
+            <p>Deixe seu computador pronto para o trabalho com upgrades, limpeza e formatação profissional.</p>
+            <ul class="card-list">
+              <li>Formatação e otimização de sistema</li>
+              <li>Troca de HD por SSD, memória RAM</li>
+              <li>Limpeza interna e troca de pasta térmica</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🎯</div>
+            <h3>Instalação de câmeras e alarmes</h3>
+            <p>Projetos completos de CFTV e alarmes para proteger sua casa, comércio ou empresa.</p>
+            <ul class="card-list">
+              <li>Instalação de câmeras internas e externas</li>
+              <li>Configuração de acesso remoto pelo celular</li>
+              <li>Integração com alarmes e gravação em NVR/DVR</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="grid grid-2 mt-32">
+          <article class="card card-alt">
+            <div class="card-icon">🛒</div>
+            <h3>Venda de acessórios, peças, câmeras e alarmes</h3>
+            <p>Equipamentos de qualidade, já prontos para instalação ou integrados aos seus projetos.</p>
+            <ul class="card-list">
+              <li>Fontes, cabos, conectores e roteadores</li>
+              <li>Câmeras bullet, dome, Wi-Fi e mais</li>
+              <li>Kits completos de segurança e alarmes</li>
+            </ul>
+          </article>
+
+          <article class="card card-alt">
+            <div class="card-icon">🛠️</div>
+            <h3>Suporte e manutenção contínua</h3>
+            <p>Planos de suporte para manter seu ambiente sempre funcionando com segurança.</p>
+            <ul class="card-list">
+              <li>Visitas agendadas e emergenciais</li>
+              <li>Monitoramento e revisões periódicas</li>
+              <li>Atualização de sistemas e equipamentos</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dev" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Serviços em desenvolvimento JPDev</h2>
+          <p>Transforme sua ideia em realidade digital com soluções sob medida.</p>
+        </header>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-icon">🌐</div>
+            <h3>Criação de sites profissionais</h3>
+            <p>Sites modernos, responsivos e rápidos, pensados para converter mais clientes.</p>
+            <ul class="card-list">
+              <li>Landing pages e sites institucionais</li>
+              <li>Integração com WhatsApp, Maps e redes</li>
+              <li>Painéis administrativos sob medida</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🤖</div>
+            <h3>Bot de WhatsApp com servidor local</h3>
+            <p>Atendimento automatizado, integrações e notificações diretamente no seu WhatsApp.</p>
+            <ul class="card-list">
+              <li>Respostas automáticas e menus interativos</li>
+              <li>Integração com sistemas internos e planilhas</li>
+              <li>Execução em servidor local para mais controle</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">📱</div>
+            <h3>Criação de aplicativos</h3>
+            <p>Apps personalizados para Android e/ou iOS focados nas necessidades do seu negócio.</p>
+            <ul class="card-list">
+              <li>Aplicativos de atendimento e gestão</li>
+              <li>Integração com APIs, banco de dados e push</li>
+              <li>Publicação e suporte em lojas de apps</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cadastro" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Cadastro de cliente e solicitação de serviço</h2>
+          <p>Preencha seus dados e nos conte o que você precisa. Entraremos em contato para finalizar o orçamento.</p>
+        </header>
+
+        <div class="grid grid-2">
+          <form id="mainForm" class="form-card" action="https://formspree.io/f/mjgawwvg" method="POST">
+            <h3>Dados do cliente</h3>
+            <div class="grid grid-2 gap-16">
+              <div class="field">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required />
+              </div>
+              <div class="field">
+                <label for="cpfCnpj">CPF / CNPJ</label>
+                <input type="text" id="cpfCnpj" name="cpfCnpj" placeholder="Somente números" />
+              </div>
+            </div>
+
+            <div class="grid grid-2 gap-16">
+              <div class="field">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" required />
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="endereco">Endereço completo</label>
+              <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade" />
+            </div>
+
+            <h3 class="mt-24">Informações do serviço</h3>
+
+            <div class="field">
+              <label for="categoriaServico">Categoria principal</label>
+              <select id="categoriaServico" name="categoriaServico" required>
+                <option value="">Selecione</option>
+                <option value="Pequenos serviços elétricos">Pequenos serviços elétricos</option>
+                <option value="Manutenção em notebook">Manutenção em notebook</option>
+                <option value="Manutenção em desktop">Manutenção em desktop</option>
+                <option value="Instalação de câmeras de segurança">Instalação de câmeras de segurança</option>
+                <option value="Alarmes e monitoramento">Alarmes e monitoramento</option>
+                <option value="Venda de acessórios, peças, câmeras e alarmes">Venda de acessórios, peças, câmeras e
+                  alarmes</option>
+                <option value="Criação de site">Criação de site</option>
+                <option value="Bot de WhatsApp com servidor local">Bot de WhatsApp com servidor local</option>
+                <option value="Criação de app">Criação de app</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="detalhesServico">Descreva o que você precisa</label>
+              <textarea id="detalhesServico" name="detalhesServico" rows="4"
+                placeholder="Conte, com detalhes, qual é a sua necessidade."></textarea>
+            </div>
+
+            <div class="grid grid-2 gap-16">
+              <div class="field">
+                <label for="preferenciaContato">Preferência de contato</label>
+                <select id="preferenciaContato" name="preferenciaContato">
+                  <option value="WhatsApp">WhatsApp</option>
+                  <option value="Ligação">Ligação</option>
+                  <option value="E-mail">E-mail</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="periodoPreferencial">Período preferencial</label>
+                <select id="periodoPreferencial" name="periodoPreferencial">
+                  <option value="Qualquer horário">Qualquer horário</option>
+                  <option value="Manhã">Manhã</option>
+                  <option value="Tarde">Tarde</option>
+                  <option value="Noite">Noite</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field field-checkbox">
+              <input type="checkbox" id="aceite" name="aceite" required />
+              <label for="aceite">Autorizo a JPDev a entrar em contato pelos meios informados.</label>
+            </div>
+
+            <button type="submit" class="btn btn-full">Enviar cadastro e solicitar orçamento</button>
+            <p class="helper-text">Seus dados serão enviados por e-mail para a equipe JPDev.</p>
+          </form>
+
+          <aside class="summary-card">
+            <h3>Resumo rápido</h3>
+            <p class="summary-empty" id="summaryEmpty">Preencha o formulário ao lado para ver um resumo do seu pedido.
+            </p>
+            <div id="summaryContent" class="summary-content" hidden>
+              <h4>Cliente</h4>
+              <p id="summaryNome"></p>
+              <p id="summaryContato"></p>
+
+              <h4 class="mt-16">Serviço desejado</h4>
+              <p id="summaryCategoria"></p>
+              <p id="summaryDetalhes" class="summary-detalhes"></p>
+
+              <h4 class="mt-16">Preferências</h4>
+              <p id="summaryPreferencias"></p>
+
+              <p class="summary-note mt-16">Após o envio, a equipe JPDev usará esses dados para preparar seu
+                atendimento.</p>
+            </div>
+
+            <div id="mainFormSuccess" class="success-message mt-24" hidden>
+              <h3>Cadastro recebido!</h3>
+              <p>Seus dados e solicitação foram salvos neste dispositivo. A JPDev entrará em contato em breve.</p>
+              <p class="success-small">Você pode fechar esta página com segurança. Para nova solicitação, basta
+                preencher novamente.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Fale com a JPDev</h2>
+          <p>Entre em contato para tirar dúvidas, negociar contratos ou solicitar visitas técnicas.</p>
+        </header>
+        <div class="grid grid-3">
+          <div class="contact-card">
+            <h3>WhatsApp</h3>
+            <p>Atendimento rápido e direto.</p>
+            <p class="contact-detail"><strong>(61) 99374-2004</strong></p>
+          </div>
+          <div class="contact-card">
+            <h3>E-mail</h3>
+            <p>Envie sua necessidade com detalhes.</p>
+            <p class="contact-detail"><strong>pablolpe1228@gmail.com</strong></p>
+          </div>
+          <div class="contact-card">
+            <h3>Atendimento local</h3>
+            <p>Cidade / Região de atendimento.</p>
+            <p class="contact-detail"><strong>Brasília - DF</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> JPDev - Serviços em Informática, Segurança e Desenvolvimento.</p>
+      <p class="footer-sub">Sites, bots e aplicativos integrados aos seus projetos de infraestrutura e segurança.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <canvas id="matrix"></canvas>
+</body>
+
+</html>
